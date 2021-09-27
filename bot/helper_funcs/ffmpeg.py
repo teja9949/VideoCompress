@@ -43,10 +43,10 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
       "quiet",
       "-progress",
       progress,
-      "-i",
+      "-i",                                             #--output-depth 10 --preset veryfast --tune film --pass 2 --bitrate 9030 --stats ".stats" 
       video_file,
-      "-c:v", 
-      "h264",
+      "-c:v",                                             #
+      "h264",                                           #--preset superfast --tune zerolatency --pass 2 --bitrate 9000 --stats ".stats" --frame-threads 2 
       "-preset", 
       "ultrafast",
       "-tune",
